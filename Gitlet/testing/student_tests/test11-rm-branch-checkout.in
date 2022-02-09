@@ -1,0 +1,17 @@
+#checks if branch removal works
+#simple case 2: create a branch with nothing in it, checkout to the branch, and try removing.
+#should result in an error Cannot remove the current branch.
+> init
+<<<
++ wug2.txt wug2.txt
+> add wug2.txt
+<<<
+> commit "added wug 2"
+<<<
+> branch other
+<<<
+> checkout other
+<<<
+> rm-branch other
+Cannot remove the current branch.
+<<<
